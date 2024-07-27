@@ -1,0 +1,150 @@
+<p>calculator works!</p>
+<h1 class="mx-8 text-red-200 text-3xl font-bold">Angular calculator</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-xxl-5 colxl-5 col-lg-5 col-md-12 col-sm-12 mx-8">
+            <div class=" surface-100 text-secondary " style="width: 359px;">
+                <div class="w-full py-6 px-4 text-white surface-600 text-right rounded" *ngIf="!stringToevaluate">0</div>
+                <div class="w-full py-6 px-4 text-white font-meduim surface-600 text-right" *ngIf="stringToevaluate">
+                    {{stringToevaluate}}</div>
+                <div class="w-full bg-red-400 d-flex">
+                    <div class="w-full flex">
+                        <div class="border-r">
+                            <button class="button-plus h-16 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="resetInput()"> C
+                            </button>
+                        </div>
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('%')"> %
+                            </button>
+                        </div>
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('/')"> /
+                            </button>
+                        </div>
+
+
+
+                        <!-- second button -->
+
+                    </div>
+                    <!-- second button row -->
+                    <div class="flex">
+                        <!-- button 7 -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('7')"> 7
+                            </button>
+                        </div>
+                        <!-- button 8 -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('8')"> 8
+                            </button>
+                        </div>
+                        <!-- button 9 -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('9')"> 9
+                            </button>
+                        </div>
+                        <!-- button 9 -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('*')"> *
+                            </button>
+                        </div>
+                    </div>
+                    <!-- end of the row -->
+
+                    <!-- third button row -->
+                    <div class="flex">
+                        <!-- button 4 -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('4')"> 4
+                            </button>
+                        </div>
+                        <!-- button 5 -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('5')"> 5
+                            </button>
+                        </div>
+                        <!-- button 6 -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('6')"> 6
+                            </button>
+                        </div>
+                        <!-- button - -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('-')"> -
+                            </button>
+                        </div>
+                    </div>
+                    <!-- end of the row -->
+                    <!-- forth button row -->
+                    <div class="flex">
+                        <!-- button 1 -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('1')"> 1
+                            </button>
+                        </div>
+                        <!-- button 2 -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('2')"> 2
+                            </button>
+                        </div>
+                        <!-- button 3 -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('3')"> 3
+                            </button>
+                        </div>
+                        <!-- button + -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('+')"> +
+                            </button>
+                        </div>
+                    </div>
+                    <!-- end of the row -->
+                    <!-- second button row -->
+                    <div class="flex">
+                        <!-- button 0 -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('0')"> 0
+                            </button>
+                        </div>
+                        <!-- button . -->
+                        <div class="border-r">
+                            <button class="button-1 text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="takeInput('.')"> .
+                            </button>
+                        </div>
+                        <!-- button = -->
+                        <div class="border-r">
+                            <button class="button-plus text-xl text-white bg-red-400 py-2  border-r border-red-400"
+                                (click)="evaluteResult()"> =
+                            </button>
+                        </div>
+                        <!-- button 9 -->
+
+                    </div>
+                    <!-- end of the row -->
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

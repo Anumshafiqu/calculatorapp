@@ -1,0 +1,12 @@
+.button-1{
+    width: 90px;
+}
+.button-plus{
+    width: 180px;
+}
+button{
+    cursor: pointer;
+}
+.calculate{
+   height: 700px;
+}
