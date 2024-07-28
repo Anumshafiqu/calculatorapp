@@ -1,0 +1,28 @@
+.text-box{
+    border-radius: 20px;
+    
+    padding: 13px;
+    width: 300px;
+    font-size: 20px;
+
+}
+.button-plus{
+    border: none !important;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 13px;
+    cursor: pointer;
+}
+.button-remove{
+    font-size: 18px;
+    padding: 13px;
+    cursor: pointer;
+    border: none !important;
+}
+li{
+    list-style: none !important;
+    width: 300px;
+}
+.main{
+width: 400px;
+}
